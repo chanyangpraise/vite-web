@@ -23,3 +23,8 @@ jobs:
         run: |
           echo $GITHUB_REPOSITORY
           echo $GITHUB_SHA
+
+      - name: Github Actions Secret 환경변수 출력
+        run: |
+          echo ${{ secrets.MY_NAME }}
+          echo ${{ secrets.MY_HOBBY }}
